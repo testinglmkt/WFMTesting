@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestSuite">
+
+	<test name="WFMtests">
+		<classes>
+			<!-- <class name="com.wfmtesting.testng.Admin_CreateBulkUsers" />
+			<class name="com.wfmtesting.testng.Admin_CreateUsFoTa" />
+			<class name="com.wfmtesting.testng.Admin_DesignationTests" />
+			<class name="com.wfmtesting.testng.Admin_ExportCSVSingleForm" />
+			<class name="com.wfmtesting.testng.Admin_LoginEnableTest" />
+			<class name="com.wfmtesting.testng.Admin_SMSReport" />
+			<class name="com.wfmtesting.testng.Admin_UnitTest" />
+			<class name="com.wfmtesting.testng.SAdmin_CreateBulkIMEI" />
+			<class name="com.wfmtesting.testng.SAdmin_CreateOrg" /> -->
+			
+			<class name="com.wfmtesting.testng.Admin_UnitTest" />
+		</classes>
+	</test>
+
+</suite>	

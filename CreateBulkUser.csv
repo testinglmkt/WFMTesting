@@ -1,0 +1,4 @@
+name,image,email,password,msisdn,imei,tracking,track_interval,track_hours,unit,designation,reporting_to_email
+Abid,,abid@gmail.com,123456,03368567121,359664050080902,FALSE,5,1,Admin,Worker,manager@gmail.com
+Sher,,sher@gmail.com,123456,03368567121,359664050080902,FALSE,5,1,Admin,Worker,manager@gmail.com
+Ali,,ali@gmail.com,123456,03368567121,359664050080902,FALSE,5,1,Admin,Worker,manager@gmail.com

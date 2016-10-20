@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="4102" started-at="2016-10-20T06:34:18Z" finished-at="2016-10-20T06:34:23Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="4102" started-at="2016-10-20T06:34:18Z" finished-at="2016-10-20T06:34:23Z">
+      <class name="com.wfmtesting.testng.Admin_UnitTest">
+        <test-method status="PASS" signature="CreateUnitUserAssign()[pri:0, instance:com.wfmtesting.testng.Admin_UnitTest@1b604f19]" name="CreateUnitUserAssign" duration-ms="4078" started-at="2016-10-20T11:34:18Z" finished-at="2016-10-20T11:34:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateUnitUserAssign -->
+      </class> <!-- com.wfmtesting.testng.Admin_UnitTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
