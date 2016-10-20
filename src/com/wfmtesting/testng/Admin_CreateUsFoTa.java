@@ -18,6 +18,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 public class Admin_CreateUsFoTa 
@@ -88,7 +91,7 @@ public class Admin_CreateUsFoTa
 		    
 		    driver.findElement(By.xpath("//button[@type='submit']")).click();
 		    
-		    /*//create user
+		    //create user
 		    driver.findElement(By.linkText("Users")).click();
 			driver.findElement(By.linkText("Add User")).click();
     	    
@@ -177,14 +180,14 @@ public class Admin_CreateUsFoTa
     	    driver.findElement(By.id("description")).clear();
     	    driver.findElement(By.id("description")).sendKeys("Dummy Description");
     	    
-    	    driver.findElement(By.cssSelector("button.btn.btn-save")).click();*/
+    	    driver.findElement(By.cssSelector("button.btn.btn-save")).click();
     	  
     	    //assign task
     	    driver.findElement(By.linkText("Tasks")).click();
 		    
 		    driver.findElement(By.name("name")).clear();
-		    //driver.findElement(By.name("name")).sendKeys(taskname);
-		    driver.findElement(By.name("name")).sendKeys("Survey of Product 1 & 2");
+		    driver.findElement(By.name("name")).sendKeys(taskname);
+		    //driver.findElement(By.name("name")).sendKeys("Survey of Product 1 & 2");
 		    driver.findElement(By.xpath("//button[@value='Filter']")).click();
 		    driver.findElement(By.xpath("//a[2]")).click();
 		    
@@ -204,26 +207,21 @@ public class Admin_CreateUsFoTa
 		    	System.out.println(cname);
 		    	System.out.println(checkbox.isDisplayed()); 
 
-//		    	WebDriverWait wait = new WebDriverWait(driver,300);
-//		    	wait.until(ExpectedConditions.elementToBeClickable(checkbox));
-//		    			
-//		    	if(!checkbox.isSelected())
-//		    	{
-//		    		checkbox.click();
-//		    	}
-		    	
-		    	if(cname.equals("CEO"))
+		    	WebDriverWait wait = new WebDriverWait(driver,300);
+		    	wait.until(ExpectedConditions.elementToBeClickable(checkbox));
+		    			
+		    	if(!checkbox.isSelected())
 		    	{
-		    		System.out.println("CEO SELECTION BLOCk");
-		    		checkbox.click();
+		    		checkbox.click();		    	
 		    	}
+		    	
 		    		
 		    }
 		    		    
 		    driver.findElement(By.cssSelector("button.btn.btn-wfm")).click();
 		    
 		    
-		    /*//delete all data
+		    //delete all data
 		    driver.findElement(By.linkText("Tasks")).click();
 		    driver.findElement(By.name("name")).clear();
 		    driver.findElement(By.name("name")).sendKeys(taskname);
@@ -281,7 +279,7 @@ public class Admin_CreateUsFoTa
 	  			Thread.sleep(1000);
 	  			//confirm delete
 	  			driver.findElement(By.xpath("//button[@id='confirm']")).click();
-	          }*/
+	          }
 		    
 		    
 		    //quit driver

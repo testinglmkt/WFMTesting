@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -21,7 +22,7 @@ public class Admin_UnitTest
 	public String useremail = username + "@gmail.com";
 	public String userpass = "123456";
 	
-	//WebDriver driver = new FirefoxDriver();
+	WebDriver driver = new FirefoxDriver();
 	
 	 public static final String USERNAME = "testinglmkt";
 	 public static final String ACCESS_KEY = "d10e250d-3200-4639-8f10-cd52353a3de8";
@@ -35,11 +36,11 @@ public class Admin_UnitTest
 	  {
 		  System.out.println(URL);
 		  
-		  DesiredCapabilities caps = DesiredCapabilities.firefox();
+		  /*DesiredCapabilities caps = DesiredCapabilities.firefox();
 		  caps.setCapability("platform", "Windows 10");
 		  caps.setCapability("version", "46.0");
 		 
-		  WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
+		  WebDriver driver = new RemoteWebDriver(new URL(URL), caps);*/
 		  
 		  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		  driver.get("http://beta.sovoia.com/wfm/auth/login");
